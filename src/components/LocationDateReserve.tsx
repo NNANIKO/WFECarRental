@@ -20,7 +20,7 @@ export default function LocationDateReserve ({onDateChange, onLocationChange} :
                 value={reserveDate}
                 onChange={(value) => {setReserveDate(value); onDateChange(value);}}/>
             </LocalizationProvider>
-            <Select variant='standard' name='location' id='location1' value={location} 
+            <Select variant='standard' name='location' id='location' value={location} 
             onChange={(e) => { setLocation(e.target.value); onLocationChange(e.target.value);}} className='h-[2em] w-[200px]'>
                 <MenuItem value='BKK'>Bangkok</MenuItem>
                 <MenuItem value='CNX'>Chiang Mai</MenuItem>
